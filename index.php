@@ -52,11 +52,21 @@ $aluno->insert();
 echo $aluno;
 */
 
+//Criando um novo usuario
+/*
 $aluno = new Usuario("aline", "@lun0");
 
 $aluno->insert();
 
 echo $aluno;
+*/
 
+$usuario = new Usuario();
+
+$usuario->loadbyId(8);
+
+$usuario->update("professor", "!@#$%¨&*");
+
+echo $usuario;
 
 ?>
